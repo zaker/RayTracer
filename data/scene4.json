@@ -1,0 +1,64 @@
+{ 
+  "Scene" : {
+
+    "Name": "Balls4",
+    "CubeMap": "Escher.jpg",
+    "Version" : {
+      "Major" : 1 ,
+      "Minor" : 0
+    },
+    "Image" : {
+      "Width" : 2048,
+      "Height" : 2048
+    },
+    "Materials" : [ 
+    {
+      "Diffuse" : [0.35, 0.25, 0.01],
+      "Diffuse2" : [0.5, 0.5, 0.01],
+      "Reflection" : 0.0,
+      "Specular" : [0.0, 0.0, 0.0],
+      "Power" : 60,
+      "Bump" : 0.0,
+      "Type" : "turbulence"
+    },
+    {
+      "Diffuse" : [0.0, 0.0, 0.0],
+      "Diffuse2" : [0.0, 0.0, 0.0],
+      "Reflection" : 1.0,
+      "Specular" : [0.2, 0.2, 0.2],
+      "Power" : 1000,
+      "Bump" : 0.0,
+      "Type" : "gouraud"
+    },
+    {
+      "Diffuse" : [0.5, 0.5, 0.5],
+      "Diffuse2" : [0.15, 0.01, 0.15],
+      "Reflection" : 0.01,
+      "Specular" : [1.2, 1.2, 1.2],
+      "Power" : 60,
+      "Bump" : 0.0,
+      "Type" : "marble"
+    }
+
+    ],
+     "Spheres" : [ 
+    {
+      "Center" : [ 1024.0, 1024.0, 0.0],
+      "Size" : 1000,
+      "Material" : 1
+    }
+
+    ],
+    "Lights" : [
+      {
+        "Position" : [0.0, 240.0, -100.0],
+        "Intensity" : [5.0, 5.0, 5.0]
+      },
+          {
+        "Position" : [640.0, 480.0, -5000.0],
+        "Intensity" : [0.6, 0.7, 1.0]
+      }
+    ]
+
+  }
+}
